@@ -5,7 +5,7 @@ use days::*;
 
 #[derive(Parser)]
 struct Cli {
-    day: u8
+    day: u8,
 }
 
 fn main() {
@@ -14,6 +14,7 @@ fn main() {
         1 => day1::run(),
         2 => day2::run(),
         3 => day3::run(),
-        _ => println!("Invalid day")
+        4 => day4::run(),
+        _ => println!("Invalid day"),
     }
 }
